@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Text,} from '@chakra-ui/react';
 import { RemoveScroll } from 'react-remove-scroll';
 import { RoadmapType } from '../../lib/roadmap';
 import RoadmapGroup from '../../pages/[roadmap]/[group]';
@@ -18,6 +18,13 @@ export function ContentDrawer(props: ContentDrawerProps) {
   }
 
   const isDone = localStorage.getItem(groupId) === 'done';
+//data saving
+ const groupData = { done: true, level: 'beginner' }
+localStorage.setItem(groupId, JSON.stringify(groupData));
+ const groupData = JSON.parse(localStorage.getItem(groupId))
+ const isDone = groupData.done === true;
+ const groupData = localStorage.getItem(groupId)
+ const groupDataParsed = groupData ?  JSON.parse(groupData) : { done: false, level: 'beginner' }
 
   return (
     <Box zIndex={99999} pos="relative">
@@ -72,6 +79,21 @@ export function ContentDrawer(props: ContentDrawerProps) {
                 </Text>
               </Button>
             )}
+
+            {/* start list */}  
+
+            <select 
+              onChange={(event) => {
+                groupData.level = event.target.value;
+                localStorage.setItem(groupId, JSON.stringify(groupData));
+              }}
+            >
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+                
+            {/* end list */}
             {isDone && (
               <Button
                 onClick={() => {

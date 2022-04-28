@@ -48,7 +48,28 @@ const GlobalStyles = css`
     & rect { fill: #cbcbcb !important; }
     & text { text-decoration: line-through; }
   }
-`;
+
+// dropdown styles
+
+svg .beginner {
+  & rect { fill: 4B7BE5 !important; }
+  & text { text-decoration: none; }
+}
+
+
+svg .intermediate {
+  & rect { fill: 6FDFDF !important; }
+  & text { text-decoration: none; }
+}
+
+svg .advanced {
+  & rect { fill: A85CF9 !important; }
+  & text { text-decoration: none; }
+}
+`
+
+
+;
 
 
 function MyApp({ Component, pageProps }: AppProps) {
