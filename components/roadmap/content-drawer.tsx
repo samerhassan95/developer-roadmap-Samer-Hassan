@@ -100,9 +100,9 @@ const [level, setLevel] = useState(groupDataParsed.level)
               }}
             >
               <option className='no_level' value="no_level">Level</option>
-              <option className='beginner' value="beginner">Beginner</option>
-              <option className='intermediate' value="intermediate">Intermediate</option>
-              <option className='advanced' value="advanced">Advanced</option>
+              <option style={{ background: '#A0C1B8' }}className='beginner' value="beginner">Beginner</option>
+              <option style={{ background: '#6FDFDF' }}className='intermediate' value="intermediate">Intermediate</option>
+              <option style={{ background: 'limegreen' }}className='advanced' value="advanced">Advanced</option>
             </select>
                 
             {/* end list */}
