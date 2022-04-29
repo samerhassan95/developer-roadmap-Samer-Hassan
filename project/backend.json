@@ -3010,6 +3010,7 @@
             "size": "16",
             "text": "Alternative Option - Pick this or purple"
           }
+        
         },
         {
           "ID": "2330",
@@ -4440,7 +4441,8 @@
           "x": "189",
           "y": "366",
           "properties": {
-            "controlName": "100-internet:how-does-the-internet-work"
+            "controlName": "100-internet:how-does-the-internet-work",
+            "level": "advanced"
           },
           "children": {
             "controls": {
