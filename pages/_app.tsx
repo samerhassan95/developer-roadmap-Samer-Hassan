@@ -50,21 +50,18 @@ const GlobalStyles = css`
   }
 
 // dropdown styles
-
-svg .beginner {
-  & rect { fill: 4B7BE5 !important; }
-  & text { text-decoration: none; }
+svg .no_level {
+  & rect { fill: A0C1B8 !important; }
 }
-
-
+svg .beginner {
+  & rect { fill: #A0C1B8 !important; }
+}
 svg .intermediate {
-  & rect { fill: 6FDFDF !important; }
-  & text { text-decoration: none; }
+  & rect { fill: #6FDFDF !important; }
 }
 
 svg .advanced {
-  & rect { fill: A85CF9 !important; }
-  & text { text-decoration: none; }
+  & rect { fill: limegreen !important; }
 }
 `
 

@@ -261,15 +261,25 @@ export class Renderer {
 
   __group__(control: any, container: any) {
     const controlName = control?.properties?.controlName;
+    const initialLevel = control?.properties?.level;
     const groupId = removeSortingInfo(controlName);
-    const isDone = localStorage.getItem(groupId) === 'done';
+    const defaultGroupData = { done: false, level: 'no_level' }
+    const groupData = localStorage.getItem(groupId)
+    const groupDataParsed = groupData ? JSON.parse(groupData) : defaultGroupData
+    const isDone = groupDataParsed.done;
+    if (initialLevel && !groupData) {
+      groupDataParsed.level = initialLevel
+      localStorage.setItem(groupId, JSON.stringify(groupDataParsed));
+    }
 
+    const level = groupDataParsed.level
+    const className = `clickable-group ${isDone ? 'done' : ''} ${level ? level : ''}`
     let group = makeSVGElement(
       'g',
       {
         ...(controlName
           ? {
-              class: `clickable-group ${isDone ? 'done' : ''}`,
+            class: className,
               'data-group-id': controlName,
             }
           : {}),

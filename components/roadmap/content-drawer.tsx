@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Box, Button, Flex, Text,} from '@chakra-ui/react';
 import { RemoveScroll } from 'react-remove-scroll';
 import { RoadmapType } from '../../lib/roadmap';
@@ -17,14 +18,14 @@ export function ContentDrawer(props: ContentDrawerProps) {
     return null;
   }
 
-  const isDone = localStorage.getItem(groupId) === 'done';
-//data saving
- const groupData = { done: true, level: 'beginner' }
-localStorage.setItem(groupId, JSON.stringify(groupData));
- const groupData = JSON.parse(localStorage.getItem(groupId))
- const isDone = groupData.done === true;
- const groupData = localStorage.getItem(groupId)
- const groupDataParsed = groupData ?  JSON.parse(groupData) : { done: false, level: 'beginner' }
+  // const isDone = localStorage.getItem(groupId) === 'done';
+//data
+const defaultGroupData = { done: false, level: 'no_level' }
+const groupData = localStorage.getItem(groupId)
+const groupDataParsed = groupData ? JSON.parse(groupData) : defaultGroupData
+const isDone = groupDataParsed.done === true;
+
+const [level, setLevel] = useState(groupDataParsed.level)
 
   return (
     <Box zIndex={99999} pos="relative">
@@ -59,7 +60,8 @@ localStorage.setItem(groupId, JSON.stringify(groupData));
             {!isDone && (
               <Button
                 onClick={() => {
-                  localStorage.setItem(groupId, 'done');
+                  groupDataParsed.done = true
+                  localStorage.setItem(groupId, JSON.stringify(groupDataParsed));
                   queryGroupElementsById(groupId).forEach((item) =>
                     item?.classList?.add('done')
                   );
@@ -82,22 +84,33 @@ localStorage.setItem(groupId, JSON.stringify(groupData));
 
             {/* start list */}  
 
-            <select 
+
+            <select
+              value={level}
               onChange={(event) => {
-                groupData.level = event.target.value;
-                localStorage.setItem(groupId, JSON.stringify(groupData));
+                const newLevel = event.target.value;
+                setLevel(newLevel)
+                groupDataParsed.level = event.target.value;
+                localStorage.setItem(groupId, JSON.stringify(groupDataParsed));
+                queryGroupElementsById(groupId).forEach((item) => {
+                  item?.classList?.remove(level)
+                  item?.classList?.add(newLevel)
+                });
+                onClose();
               }}
             >
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="advanced">Advanced</option>
+              <option className='no_level' value="no_level">Level</option>
+              <option className='beginner' value="beginner">Beginner</option>
+              <option className='intermediate' value="intermediate">Intermediate</option>
+              <option className='advanced' value="advanced">Advanced</option>
             </select>
                 
             {/* end list */}
             {isDone && (
               <Button
                 onClick={() => {
-                  localStorage.removeItem(groupId);
+                  groupDataParsed.done = false
+                  localStorage.setItem(groupId, JSON.stringify(groupDataParsed));
                   queryGroupElementsById(groupId).forEach((item) =>
                     item?.classList?.remove('done')
                   );
