@@ -4391,7 +4391,8 @@
                   "properties": {
                     "bold": "true",
                     "size": "17",
-                    "text": "Internet"
+                    "text": "Internet",
+                    "level":"intermediate"
                   }
                 },
                 {
@@ -4442,7 +4443,7 @@
           "y": "366",
           "properties": {
             "controlName": "100-internet:how-does-the-internet-work",
-            "level": "advanced"
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -4522,7 +4523,8 @@
           "x": "188",
           "y": "418",
           "properties": {
-            "controlName": "101-internet:what-is-http"
+            "controlName": "101-internet:what-is-http",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -4602,7 +4604,8 @@
           "x": "188",
           "y": "463",
           "properties": {
-            "controlName": "102-internet:browsers-and-how-they-work"
+            "controlName": "102-internet:browsers-and-how-they-work",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -4682,7 +4685,8 @@
           "x": "989",
           "y": "361",
           "properties": {
-            "controlName": "103-internet:dns-and-how-it-works"
+            "controlName": "103-internet:dns-and-how-it-works",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -4762,7 +4766,8 @@
           "x": "988",
           "y": "411",
           "properties": {
-            "controlName": "104-internet:what-is-domain-name"
+            "controlName": "104-internet:what-is-domain-name",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -4872,7 +4877,8 @@
                   "y": "14",
                   "properties": {
                     "size": "17",
-                    "text": "What is hosting?"
+                    "text": "What is hosting?",
+                    "level":"intermediate"
                   }
                 },
                 {
@@ -5323,7 +5329,8 @@
           "x": "222",
           "y": "594",
           "properties": {
-            "controlName": "100-os-general-knowledge:terminal-usage"
+            "controlName": "100-os-general-knowledge:terminal-usage",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -5433,7 +5440,8 @@
                   "y": "14",
                   "properties": {
                     "size": "17",
-                    "text": "How OSs work in General"
+                    "text": "How OSs work in General",
+                    "level":"intermediate"
                   }
                 },
                 {
@@ -5643,7 +5651,8 @@
           "x": "222",
           "y": "797",
           "properties": {
-            "controlName": "104-os-general-knowledge:basic-terminal-commands"
+            "controlName": "104-os-general-knowledge:basic-terminal-commands",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -7039,7 +7048,8 @@
                   "properties": {
                     "bold": "true",
                     "size": "17",
-                    "text": "Version Control Systems"
+                    "text": "Version Control Systems",
+                    "level":"intermediate"
                   }
                 },
                 {
@@ -7102,7 +7112,8 @@
                   "properties": {
                     "bold": "true",
                     "size": "17",
-                    "text": "Basic Usage of Git"
+                    "text": "Basic Usage of Git",
+                    "level":"intermediate"
                   }
                 },
                 {
@@ -7152,7 +7163,8 @@
           "x": "833",
           "y": "1079",
           "properties": {
-            "controlName": "105-repo-hosting-services"
+            "controlName": "105-repo-hosting-services",
+            "level":"intermediate"
           },
           "children": {
             "controls": {

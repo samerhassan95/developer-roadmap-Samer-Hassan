@@ -14,9 +14,9 @@ type ContentDrawerProps = {
 
 export function ContentDrawer(props: ContentDrawerProps) {
   const { roadmap, groupId, onClose = () => null } = props;
-  if (!groupId) {
-    return null;
-  }
+  // if (!groupId) {
+  //   return null;
+  // }
 
   // const isDone = localStorage.getItem(groupId) === 'done';
 //data
@@ -24,8 +24,8 @@ const defaultGroupData = { done: false, level: 'no_level' }
 const groupData = localStorage.getItem(groupId)
 const groupDataParsed = groupData ? JSON.parse(groupData) : defaultGroupData
 const isDone = groupDataParsed.done === true;
-
 const [level, setLevel] = useState(groupDataParsed.level)
+
 
   return (
     <Box zIndex={99999} pos="relative">

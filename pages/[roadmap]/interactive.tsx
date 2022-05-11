@@ -125,11 +125,11 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
-      <ContentDrawer
+      {groupId && <ContentDrawer
         roadmap={roadmap}
         groupId={groupId}
         onClose={() => setGroupId('')}
-      />
+      />}
 
       <div ref={roadmapRef} />
     </Container>
