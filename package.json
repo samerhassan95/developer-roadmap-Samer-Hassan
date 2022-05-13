@@ -11,6 +11,7 @@
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d out -t",
     "start": "next start",
     "lint": "next lint",
+    "next": "next",
     "meta:sitemap": "node scripts/sitemap.js",
     "meta:roadmaps": "node ./scripts/roadmaps-meta.js",
     "meta": "npm run meta:roadmaps && npm run meta:sitemap",

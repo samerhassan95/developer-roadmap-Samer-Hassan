@@ -4360,7 +4360,8 @@
           "x": "586",
           "y": "414",
           "properties": {
-            "controlName": "100-internet"
+            "controlName": "100-internet",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -4391,8 +4392,7 @@
                   "properties": {
                     "bold": "true",
                     "size": "17",
-                    "text": "Internet",
-                    "level":"intermediate"
+                    "text": "Internet"
                   }
                 },
                 {
@@ -4847,7 +4847,8 @@
           "x": "989",
           "y": "456",
           "properties": {
-            "controlName": "105-internet:what-is-hosting"
+            "controlName": "105-internet:what-is-hosting",
+            "level": "intermediate"
           },
           "children": {
             "controls": {
@@ -4877,9 +4878,8 @@
                   "y": "14",
                   "properties": {
                     "size": "17",
-                    "text": "What is hosting?",
-                    "level":"intermediate"
-                  }
+                    "text": "What is hosting?"
+}
                 },
                 {
                   "ID": "2",
@@ -4928,7 +4928,8 @@
           "x": "587",
           "y": "475",
           "properties": {
-            "controlName": "101-basic-frontend"
+            "controlName": "101-basic-frontend",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -5008,7 +5009,8 @@
           "x": "347",
           "y": "527",
           "properties": {
-            "controlName": "100-basic-frontend:html"
+            "controlName": "100-basic-frontend:html",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -5088,7 +5090,8 @@
           "x": "989",
           "y": "508",
           "properties": {
-            "controlName": "101-basic-frontend:css"
+            "controlName": "101-basic-frontend:css",
+            "level": "intermediate"
           },
           "children": {
             "controls": {
@@ -5168,7 +5171,8 @@
           "x": "989",
           "y": "561",
           "properties": {
-            "controlName": "102-basic-frontend:javascript"
+            "controlName": "102-basic-frontend:javascript",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -5440,8 +5444,7 @@
                   "y": "14",
                   "properties": {
                     "size": "17",
-                    "text": "How OSs work in General",
-                    "level":"intermediate"
+                    "text": "How OSs work in General"
                   }
                 },
                 {
@@ -6176,7 +6179,8 @@
           "x": "566",
           "y": "920",
           "properties": {
-            "controlName": "103-learn-a-language"
+            "controlName": "103-learn-a-language",
+            "level":"advanced"
           },
           "children": {
             "controls": {
@@ -6733,7 +6737,8 @@
           "x": "1019",
           "y": "899",
           "properties": {
-            "controlName": "105-learn-a-language:javascript"
+            "controlName": "105-learn-a-language:javascript",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -6813,7 +6818,8 @@
           "x": "1019",
           "y": "947",
           "properties": {
-            "controlName": "106-learn-a-language:python"
+            "controlName": "106-learn-a-language:python",
+            "level":"beginner"
           },
           "children": {
             "controls": {
@@ -7017,7 +7023,8 @@
           "x": "464",
           "y": "1080",
           "properties": {
-            "controlName": "104-version-control-systems"
+            "controlName": "104-version-control-systems",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -7048,8 +7055,7 @@
                   "properties": {
                     "bold": "true",
                     "size": "17",
-                    "text": "Version Control Systems",
-                    "level":"intermediate"
+                    "text": "Version Control Systems"
                   }
                 },
                 {
@@ -7081,7 +7087,8 @@
           "x": "202",
           "y": "1086",
           "properties": {
-            "controlName": "100-version-control-systems:git"
+            "controlName": "100-version-control-systems:git",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -7227,7 +7234,8 @@
           "x": "1178",
           "y": "988",
           "properties": {
-            "controlName": "100-repo-hosting-services:github"
+            "controlName": "100-repo-hosting-services:github",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -7540,7 +7548,8 @@
           "x": "488",
           "y": "1201",
           "properties": {
-            "controlName": "106-relational-databases"
+            "controlName": "106-relational-databases",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -7589,7 +7598,8 @@
           "x": "235",
           "y": "1185",
           "properties": {
-            "controlName": "100-relational-databases:postgresql"
+            "controlName": "100-relational-databases:postgresql",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -7619,7 +7629,8 @@
                   "y": "15",
                   "properties": {
                     "size": "17",
-                    "text": "PostgreSQL"
+                    "text": "PostgreSQL",
+                    "level":"intermediate"
                   }
                 },
                 {
@@ -7685,7 +7696,8 @@
           "x": "235",
           "y": "1235",
           "properties": {
-            "controlName": "101-relational-databases:mysql"
+            "controlName": "101-relational-databases:mysql",
+            "level":"intermediate"
           },
           "children": {
             "controls": {
@@ -8099,7 +8111,9 @@
                   "properties": {
                     "bold": "true",
                     "size": "17",
-                    "text": "NoSQL Databases"
+                    "text": "NoSQL Databases",
+                    "level":"no-level"
+
                   }
                 }
               ]
@@ -8779,7 +8793,8 @@
                   "y": "17",
                   "properties": {
                     "size": "17",
-                    "text": "Database Normalization"
+                    "text": "Database Normalization",
+                    "level":"no-level"
                   }
                 },
                 {
@@ -8859,7 +8874,8 @@
                   "y": "8",
                   "properties": {
                     "size": "17",
-                    "text": "Indexes and how they work"
+                    "text": "Indexes and how they work",
+                    "level":"no-level"
                   }
                 }
               ]
@@ -9067,7 +9083,7 @@
                   "y": "12",
                   "properties": {
                     "size": "17",
-                    "text": "CAP Theorem"
+                    "text": "CAP Theorem","level":"no-level"
                   }
                 },
                 {
@@ -9166,7 +9182,8 @@
           "x": "1085",
           "y": "1511",
           "properties": {
-            "controlName": "100-apis:rest"
+            "controlName": "100-apis:rest",
+            "level":"beginner"
           },
           "children": {
             "controls": {
@@ -9260,7 +9277,8 @@
           "x": "1085",
           "y": "1577",
           "properties": {
-            "controlName": "101-apis:json-apis"
+            "controlName": "101-apis:json-apis",
+            "level":"beginner"
           },
           "children": {
             "controls": {
